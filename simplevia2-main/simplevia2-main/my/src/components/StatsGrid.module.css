@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+}
+
+/* ✅ data number: bigger + bold */
+.value {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* ✅ title same font size as percent */
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+/* ✅ percent smaller text */
+.badge {
+  margin-top: 10px;
+  margin-left: 0%;
+}
+
+/* Mantine badge label text */
+.badge :global(.mantine-Badge-label) {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: none;
+ 
+
+}
+

@@ -1,0 +1,84 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Light mode lang tayo para swak sa design */
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* para consistent sizing sa lahat */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* BACKGROUND + CENTERING */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  background-image: url("./assets/grid-schuler-top-left.png"),
+    url("./assets/grid-schuler-bottom-right.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 30%, 30%;
+  padding: 24px; /* para may breathing room sa small screens */
+}
+
+/* para yung card hindi dumikit sa gilid sa mobile */
+#root {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* --------- RESPONSIVE TWEAKS --------- */
+
+/* Tablet and down */
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;      /* card starts a bit higher */
+    padding: 16px;
+    background-size: 45%, 45%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+    background-size: 65%, 65%;
+    /* pwede mong galawin kung gusto mo iba position sa phone */
+    background-position: -80px 0, 100% 100%;
+  }
+}

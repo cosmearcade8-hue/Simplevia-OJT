@@ -1,6 +1,9 @@
 .card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* ✅ para hindi ma-center ang badge */
 }
+
 
 /* ✅ data number: bigger + bold */
 .value {
@@ -32,5 +35,12 @@
   text-transform: none;
  
 
+}
+
+.badge {
+  align-self: flex-start;   /* ✅ ito yung magle-left */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: fit-content;
 }
 
